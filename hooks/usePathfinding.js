@@ -1,36 +1,64 @@
+import {
+  buildCorridorGraph
+} from "../utils/buildCorridorGraph";
+
+import {
+  findNearestCorridor
+} from "../utils/findNearestCorridor";
+
+import {
+  findCorridorPath
+} from "../utils/findCorridorPath";
+
+
 export function findPath(
   startIndex,
   endIndex,
   layout
 ) {
 
-  const beacons =
-    layout.beacons;
+  const nodes =
+    buildCorridorGraph(
+      layout.rectangles
+    );
 
-  const path = [];
+  const startBeacon =
+    layout.beacons[startIndex];
 
-  const start =
-    beacons[startIndex];
+  const endBeacon =
+    layout.beacons[endIndex];
 
-  const end =
-    beacons[endIndex];
+  const startNode =
+    findNearestCorridor(
+      startBeacon,
+      nodes
+    );
 
-  // Simple demo path
-  path.push([
-    start.x,
-    start.y
-  ]);
+  const endNode =
+    findNearestCorridor(
+      endBeacon,
+      nodes
+    );
 
-  path.push([
-    start.x,
-    end.y
-  ]);
 
-  path.push([
-    end.x,
-    end.y
-  ]);
+  const corridorPath =
+    findCorridorPath(
+      startNode,
+      endNode,
+      nodes
+    );
 
-  return path;
+
+  return [
+
+    [startBeacon.x,
+     startBeacon.y],
+
+    ...corridorPath,
+
+    [endBeacon.x,
+     endBeacon.y]
+
+  ];
 
 }
