@@ -1,0 +1,68 @@
+{
+  "floor_plan.png12345": {
+    "filename": "floor_plan.png",
+    "size": 12345,
+    "regions": [
+      {
+        "shape_attributes": { "name": "rect", "x": 50,  "y": 50,  "width": 600, "height": 50  },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": { "name": "rect", "x": 50,  "y": 50,  "width": 50,  "height": 400 },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": { "name": "rect", "x": 600, "y": 50,  "width": 50,  "height": 400 },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": { "name": "rect", "x": 200, "y": 50,  "width": 50,  "height": 300 },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": { "name": "rect", "x": 400, "y": 50,  "width": 50,  "height": 300 },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": { "name": "rect", "x": 200, "y": 300, "width": 250, "height": 50  },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": { "name": "rect", "x": 50,  "y": 380, "width": 200, "height": 50  },
+        "region_attributes": {}
+      },
+
+      { "shape_attributes": { "name": "point", "cx": 75,  "cy": 75  }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 325, "cy": 75  }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 500, "cy": 75  }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 625, "cy": 75  }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 75,  "cy": 200 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 75,  "cy": 325 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 225, "cy": 150 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 225, "cy": 250 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 325, "cy": 325 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 425, "cy": 150 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 425, "cy": 250 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 625, "cy": 200 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 625, "cy": 325 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 75,  "cy": 405 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 175, "cy": 405 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 225, "cy": 75  }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 425, "cy": 75  }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 225, "cy": 325 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 425, "cy": 325 }, "region_attributes": {} },
+
+  
+
+      {
+        "shape_attributes": { "name": "ellipse", "cx": 75,  "cy": 460, "rx": 25, "ry": 8, "theta": 0 },
+        "region_attributes": {}
+      },
+      {
+        "shape_attributes": { "name": "ellipse", "cx": 625, "cy": 60,  "rx": 25, "ry": 8, "theta": 0 },
+        "region_attributes": {}
+      }
+    ],
+    "file_attributes": {}
+  }
+}

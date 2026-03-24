@@ -1,4 +1,4 @@
-package com.pythonative
+package com.samyakhub.pythonative
 
 import android.os.Build
 import android.os.Bundle
