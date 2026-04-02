@@ -49,8 +49,12 @@
       { "shape_attributes": { "name": "point", "cx": 175, "cy": 405 }, "region_attributes": {} },
       { "shape_attributes": { "name": "point", "cx": 225, "cy": 75  }, "region_attributes": {} },
       { "shape_attributes": { "name": "point", "cx": 425, "cy": 75  }, "region_attributes": {} },
-      { "shape_attributes": { "name": "point", "cx": 225, "cy": 325 }, "region_attributes": {} },
-      { "shape_attributes": { "name": "point", "cx": 425, "cy": 325 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 300, "cy": 327 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 400, "cy": 327 }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 750,  "cy": 752  }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 555,  "cy": 235  }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 455,  "cy": 235  }, "region_attributes": {} },
+      { "shape_attributes": { "name": "point", "cx": 355,  "cy": 235  }, "region_attributes": {} },
 
   
 

@@ -21,8 +21,8 @@ export default function BeaconRenderer({
           <Circle
             cx={b.x}
             cy={b.y}
-            r="6"
-            fill={COLORS.beacon}
+            r={b.r || 18}
+            fill={b.fill || COLORS.beacon}
 
             onPress={() =>
               onSelectBeacon(i)

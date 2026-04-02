@@ -3,28 +3,24 @@ import { Path } from "react-native-svg";
 
 export default function PathRenderer({ points }) {
 
-  if (!points.length) return null;
+  if (!points || points.length === 0) return null;
 
-  let d =
-    `M ${points[0][0]} ${points[0][1]}`;
-
+  // Use straight line segments (L) so the path follows corridor centre-lines
+  // exactly.  Bezier smoothing causes the line to visually cut through walls.
+  let d = `M ${points[0][0]} ${points[0][1]}`;
   for (let i = 1; i < points.length; i++) {
-
-    d +=
-      ` L ${points[i][0]} ${points[i][1]}`;
-
+    d += ` L ${points[i][0]} ${points[i][1]}`;
   }
 
   return (
-
     <Path
       d={d}
-      stroke="yellow"
-      strokeWidth="4"
+      stroke="#2196F3"
+      strokeWidth="5"
       fill="none"
-      strokeDasharray="10,6"
+      strokeLinejoin="round"
+      strokeLinecap="round"
     />
-
   );
 
 }

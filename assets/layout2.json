@@ -1,0 +1,186 @@
+[
+  {
+    "type": "path",
+    "attributes": {
+      "d": "M151.764 38L559.264 23",
+      "stroke": "#FF0000",
+      "stroke-width": "30"
+    }
+  },
+  {
+    "type": "path",
+    "attributes": {
+      "d": "M146.764 275.5L551.765 263",
+      "stroke": "#FF0000",
+      "stroke-width": "30"
+    }
+  },
+  {
+    "type": "path",
+    "attributes": {
+      "d": "M148.764 157.5L559.764 143.5",
+      "stroke": "#FF0000",
+      "stroke-width": "30"
+    }
+  },
+  {
+    "type": "path",
+    "attributes": {
+      "d": "M172.887 39.7055L122.073 25.9437L79.7807 53.8396L48.3752 105.494L42.7815 177.776L119.277 188.555L171.582 145.117",
+      "stroke": "#FF0000",
+      "stroke-width": "30"
+    }
+  },
+  {
+    "type": "path",
+    "attributes": {
+      "d": "M538.709 146.398C708.31 119.579 710.888 294.213 536.825 260.373",
+      "stroke": "#FF0000",
+      "stroke-width": "30"
+    }
+  },
+  {
+    "type": "path",
+    "attributes": {
+      "d": "M238.264 28.5L464.264 266.5",
+      "stroke": "#FF0000",
+      "stroke-width": "30"
+    }
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "130.264",
+      "cy": "28.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_1"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "45.2637",
+      "cy": "173.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_2"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "130.264",
+      "cy": "28.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_3"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "295.264",
+      "cy": "269.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_4"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "170.264",
+      "cy": "273.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_5"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "170.264",
+      "cy": "155.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_6"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "450.264",
+      "cy": "259.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_7"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "249.264",
+      "cy": "36.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_8"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "406.264",
+      "cy": "29.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_9"
+  },
+  {
+    "type": "path",
+    "attributes": {
+      "d": "M359.264 148C359.264 152.142 355.906 155.5 351.764 155.5C347.622 155.5 344.264 152.142 344.264 148C344.264 143.858 347.622 140.5 351.764 140.5C355.906 140.5 359.264 143.858 359.264 148Z",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_10"
+  },
+  {
+    "type": "path",
+    "attributes": {
+      "d": "M556.264 141C556.264 145.142 552.906 148.5 548.764 148.5C544.622 148.5 541.264 145.142 541.264 141C541.264 136.858 544.622 133.5 548.764 133.5C552.906 133.5 556.264 136.858 556.264 141Z",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_11"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "551.264",
+      "cy": "259.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_12"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "667.264",
+      "cy": "197.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_13"
+  },
+  {
+    "type": "circle",
+    "attributes": {
+      "cx": "524.264",
+      "cy": "25.5",
+      "r": "7.5",
+      "fill": "#1EDA4D"
+    },
+    "id": "beacon_14"
+  }
+]

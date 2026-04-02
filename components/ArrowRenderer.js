@@ -3,7 +3,7 @@ import { Polygon } from "react-native-svg";
 
 function getArrowPoints(x, y, direction) {
 
-  const size = 10;
+  const size = 3;
 
   if (direction === "E") {
     return `

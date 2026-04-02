@@ -8,7 +8,7 @@ import {
 } from "react-native";
 
 import layoutJson
-  from "../assets/layout.json";
+  from "../assets/layout2.json";
 
 import {
   parseLayout

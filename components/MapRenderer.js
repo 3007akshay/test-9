@@ -3,7 +3,8 @@ import Svg, {
   Rect,
   Circle,
   Ellipse,
-  Polygon
+  Polygon,
+  Path
 } from "react-native-svg";
 
 import { COLORS } from "../constants/mapConfig";
@@ -34,13 +35,43 @@ export default function MapRenderer({
   const goalPoint =
     pathPoints[pathPoints.length - 1];
 
+  // Compute dynamic viewBox Based on all elements
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+
+  const updateBounds = (x, y, w = 0, h = 0) => {
+    if (x < minX) minX = x;
+    if (y < minY) minY = y;
+    if (x + w > maxX) maxX = x + w;
+    if (y + h > maxY) maxY = y + h;
+  };
+
+  layout.rectangles?.forEach(r => updateBounds(r.x, r.y, r.width, r.height));
+  layout.circles?.forEach(c => updateBounds(c.x - c.r, c.y - c.r, c.r * 2, c.r * 2));
+  layout.beacons?.forEach(b => updateBounds(b.x - b.r, b.y - b.r, b.r * 2, b.r * 2));
+
+  // A basic bbox parse for paths
+  layout.paths?.forEach(p => {
+    const nums = p.d.match(/-?[\d.]+/g);
+    if (nums) {
+      for (let i = 0; i < nums.length - 1; i += 2) {
+        updateBounds(parseFloat(nums[i]), parseFloat(nums[i+1]));
+      }
+    }
+  });
+
+  if (minX === Infinity) { minX = 0; minY = 0; maxX = 7829; maxY = 6867; }
+
+  // Add padding
+  const pad = 50;
+  const vBox = `${minX - pad} ${minY - pad} ${maxX - minX + pad * 2} ${maxY - minY + pad * 2}`;
+
 
   return (
 
     <Svg
       width="100%"
       height="100%"
-      viewBox="0 0 700 500"
+      viewBox={vBox}
     >
 
       {/* ---------------- */}
@@ -55,8 +86,25 @@ export default function MapRenderer({
           y={r.y}
           width={r.width}
           height={r.height}
-          fill={COLORS.corridor}
-          stroke="cyan"
+          fill={r.fill || COLORS.corridor}
+          transform={r.transform}
+        />
+
+      ))}
+
+
+      {/* ---------------- */}
+      {/* Path Strokes */}
+      {/* ---------------- */}
+
+      {(layout.paths || []).map((p, i) => (
+
+        <Path
+          key={`path-${i}`}
+          d={p.d}
+          stroke={p.stroke}
+          strokeWidth={p.strokeWidth}
+          fill="none"
         />
 
       ))}
@@ -73,7 +121,7 @@ export default function MapRenderer({
           cx={c.x}
           cy={c.y}
           r={c.r}
-          fill={COLORS.obstacle}
+          fill={c.fill || COLORS.obstacle}
         />
 
       ))}
@@ -85,13 +133,10 @@ export default function MapRenderer({
 
       {layout.ellipses.map((e, i) => (
 
-        <Ellipse
+        <Path
           key={`ellipse-${i}`}
-          cx={e.x}
-          cy={e.y}
-          rx={e.rx}
-          ry={e.ry}
-          fill={COLORS.entry}
+          d={e.pathData}
+          fill={e.fill || COLORS.entry}
         />
 
       ))}
