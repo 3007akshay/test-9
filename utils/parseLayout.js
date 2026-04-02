@@ -89,18 +89,12 @@ export function parseLayout(json) {
       const x2 = parseFloat(attrs.x2) || 0;
       const y2 = parseFloat(attrs.y2) || 0;
       const strokeWidth = parseFloat(attrs["stroke-width"]) || 30;
+      const stroke = attrs.stroke || "#FF0000";
       
-      const minX = Math.min(x1, x2);
-      const minY = Math.min(y1, y2);
-      const width = Math.abs(x2 - x1) || strokeWidth;
-      const height = Math.abs(y2 - y1) || strokeWidth;
-      
-      rectangles.push({
-        x: minX - strokeWidth / 2,
-        y: minY - strokeWidth / 2,
-        width: width + strokeWidth,
-        height: strokeWidth,
-        fill: attrs.stroke,
+      paths.push({
+        d: `M${x1} ${y1}L${x2} ${y2}`,
+        stroke: stroke,
+        strokeWidth: strokeWidth,
       });
     }
 
